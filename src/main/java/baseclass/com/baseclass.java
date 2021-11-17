@@ -22,6 +22,8 @@ public class baseclass {
             prop.load(fp);
             baseurl=prop.getProperty("testingurl");
             apiId=prop.getProperty("appid");
+            //We can set base URI here itself instead of test
+            //RestAssured.baseURI = prop.getProperty("testingurl");
 
         }catch (Exception e){
             e.printStackTrace();
